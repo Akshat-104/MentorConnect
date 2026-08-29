@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { authContext } from '../context/authContext';
 import axios from 'axios';
 
-const REGISTER_URL = 'http://localhost:4444/api/auth/register';
+const REGISTER_URL = 'https://mentorconnect-szhf.onrender.com/api/auth/register';
 
 export default function Register() {
   const { login } = useContext(authContext);

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Calendar, User, Clock, AlertCircle, XCircle } from 'lucide-react';
 
-const API_BASE = 'http://127.0.0.1:4444/api/bookings';
+const API_BASE = 'https://mentorconnect-szhf.onrender.com/api/bookings';
 
 export default function StudentBookings() {
   const [bookings, setBookings] = useState([]);
@@ -44,7 +44,7 @@ export default function StudentBookings() {
 
     try {
       setActionLoading(bookingId);
-      await axios.delete(`http://localhost:4444/api/bookings/${bookingId}`, {
+      await axios.delete(`https://mentorconnect-szhf.onrender.com/api/bookings/${bookingId}`, {
   headers: getAuthHeaders()
 });
 

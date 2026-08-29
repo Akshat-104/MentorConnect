@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Clock, Plus, Trash2, Calendar, CheckCircle, AlertCircle } from 'lucide-react';
 
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-const API_BASE = 'http://localhost:4444/api/mentors/availability';
+const API_BASE = 'https://mentorconnect-szhf.onrender.com/api/mentors/availability';
 
 export default function MentorSchedule() {
   const [schedule, setSchedule] = useState([]);

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Search, Calendar, CheckCircle, Briefcase, Clock, AlertCircle } from 'lucide-react';
 
-const API_BASE = 'http://localhost:4444/api';
+const API_BASE = 'https://mentorconnect-szhf.onrender.com/api';
 
 export default function MentorDirectory() {
   const [mentors, setMentors] = useState([]);

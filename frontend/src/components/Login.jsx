@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { authContext } from '../context/authContext';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:4444/api/auth/login';
+const API_URL = 'https://mentorconnect-szhf.onrender.com/api/auth/login';
 
 export default function Login() {
   const [formData, setFormData] = useState({ email: '', password: '' });

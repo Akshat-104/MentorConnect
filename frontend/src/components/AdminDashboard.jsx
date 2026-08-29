@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:4444/api/admin/applications';
+const BASE_URL = 'https://mentorconnect-szhf.onrender.com/api/admin/applications';
 
 export default function AdminDashboard() {
   const [applications, setApplications] = useState([]);
