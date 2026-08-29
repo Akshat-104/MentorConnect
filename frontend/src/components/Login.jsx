@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { AuthContext } from '../context/authContext';
+import { authContext } from '../context/authContext';
 import axios from 'axios';
 
 const API_URL = 'http://localhost:4444/api/auth/login';
@@ -10,7 +10,7 @@ export default function Login() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const { login } = useContext(AuthContext);
+  const { login } = useContext(authContext);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
